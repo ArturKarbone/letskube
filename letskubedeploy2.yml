@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: letskube-deployment
+  # labels:
+  #   app: letskube
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: letskube #how to find pods & rs to manage
+  template:
+    metadata:
+      name: letskube
+      labels:
+        app: letskube #pods & replica set labels. Why do we need both?
+        #app2: letskube2
+    spec:
+      containers:
+      - name: random-letskube
+        image: kubernetes01.azurecr.io/letskube:v2
+        imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: letskube-service
+spec:
+  selector:
+    app: letskube
+    #app2: letskube2 # looks for pods (or replica set) with such a label
+  ports:
+    - port: 80
+  type: LoadBalancer
+  
+  

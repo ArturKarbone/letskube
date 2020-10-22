@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: letskube-3
+spec:
+  selector:
+    matchLabels:
+      app: letskube-3-pod
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: letskube-3-pod
+    spec:     
+      containers:
+      - name: letskube-3
+        image:  kubernetes01.azurecr.io/letskube:v2
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80

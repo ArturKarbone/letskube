@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: letskube
-        image: letskubedemo.azurecr.io/letskube:latest
+        image: letskube:local
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
   selector:

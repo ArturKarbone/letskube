@@ -14,6 +14,7 @@ namespace LetsKube
     {
         public static void Main(string[] args)
         {
+            var machineName = Environment.MachineName;
             BuildWebHost(args).Run();
         }
 

@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore-build AS build-env
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
@@ -10,7 +10,7 @@ COPY . ./
 RUN dotnet publish -c Release -o output
 
 # build runtime image
-FROM microsoft/aspnetcore
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-focal
 WORKDIR /app
 COPY --from=build-env /app/output .
 ENTRYPOINT ["dotnet", "LetsKube.dll"]

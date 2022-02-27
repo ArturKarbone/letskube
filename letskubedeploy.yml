@@ -14,7 +14,23 @@ spec:
     spec:
       containers:
       - name: letskube
-        image: letskube:local
+        image: arturkarbone/letskube
+        readinessProbe:
+          httpGet:
+            path: /health/readiness
+            port: 80
+          successThreshold: 3
+          failureThreshold: 3
+          periodSeconds: 10
+          timeoutSeconds: 1
+        livenessProbe:
+          httpGet:
+            path: /health/liveness
+            port: 80
+          failureThreshold: 7
+          periodSeconds: 10
+          timeoutSeconds: 1
+          initialDelaySeconds: 0
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
   selector:

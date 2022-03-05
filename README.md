@@ -1,9 +1,22 @@
 "# letskube" 
 
 
-kubectl proxy
+
 http://localhost:8001/api/v1/namespaces/default/services/letskube-service/proxy/
 
 
-> kubectl get pod letskube-deployment-64d58c4966-4gwfs -o yaml (check config)
-> kubectl exec letskube-deployment-5c9f95c675-5r7sd -it sh
+> export pod=letskube-deployment-677b479cb4-rmb45
+
+> kubectl get pod $pod -o yaml (check config)
+>
+> kubectl describe pod $pod
+
+> kubectl exec $pod -it sh
+
+> kubectl get events
+>
+> kubectl get event --field-selector involvedObject.name=$pod
+
+> kubectl proxy
+>
+> kubectl port-forward svc/kubeview1 8080:80 namespace kubeview

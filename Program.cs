@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 
 namespace LetsKube
 {
@@ -14,6 +8,8 @@ namespace LetsKube
     {
         public static void Main(string[] args)
         {
+
+            
             var machineName = Environment.MachineName;
             BuildWebHost(args).Run();
         }

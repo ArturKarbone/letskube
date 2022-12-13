@@ -1,5 +1,8 @@
 "# letskube" 
-
+>  docker build -t arturkarbone/letskube:v1 .
+>  docker images
+>  docker run -p 8080:80 arturkarbone/letskube (play with console logs)
+>  docker push arturkarbone/letskube:v1 
 
 
 http://localhost:8001/api/v1/namespaces/default/services/letskube-service/proxy/

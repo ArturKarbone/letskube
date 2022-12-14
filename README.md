@@ -6,7 +6,7 @@
 
 **Activities**:
 - develop
-- deploy (zero downtime)
+- release/deploy (zero downtime)
 - scale
 
 Coordination VS integration patterns

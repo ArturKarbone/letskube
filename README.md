@@ -15,6 +15,12 @@ Definition - compliance/checklist/protocol.
 
 Two pizza team rule
 
+**Cloud-native**:
+- Scale on demand
+- Self-heal
+- Zero-downtime updates
+- Containerized
+
 ```console
 docker build -t arturkarbone/letskube:v1 .
 docker images

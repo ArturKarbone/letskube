@@ -21,6 +21,14 @@ Two pizza team rule
 - Zero-downtime updates
 - Containerized
 
+**Implementations/Distributives**
+
+- EKS
+- AKS (Azure Kubernetes Service)
+- DOKS (Digital Ocean Kubernetes) https://docs.digitalocean.com/products/kubernetes/
+- GKE (Google Kubernetes Engine)
+- LKE (Linode Kubernetes Engine)
+
 ## Resources
 
 https://learn.microsoft.com/en-us/training/modules/dotnet-deploy-microservices-kubernetes/

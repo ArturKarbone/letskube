@@ -23,7 +23,7 @@ Two pizza team rule
 
 **Implementations/Distributives**
 
-- EKS
+- EKS (Elastic Kubernetes Service)
 - AKS (Azure Kubernetes Service)
 - DOKS (Digital Ocean Kubernetes) https://docs.digitalocean.com/products/kubernetes/
 - GKE (Google Kubernetes Engine)

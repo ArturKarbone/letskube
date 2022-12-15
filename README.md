@@ -15,6 +15,8 @@ Definition - compliance/checklist/protocol.
 
 Two pizza team rule
 
+**Kubernetes** - an orchestrator for cloud-native microservices applications (Desired state/actual state). OS of the Cloud.
+
 **Cloud-native**:
 - Scale on demand
 - Self-heal

@@ -1,4 +1,4 @@
-"# letskube" 
+## Theory
 
 **Monolith applications** - just a fancy way of saying _all of the application features are bundled together as a single package_ (db/api/web/identity/reporting/outbound, etc.)
 
@@ -20,6 +20,13 @@ Two pizza team rule
 - Self-heal
 - Zero-downtime updates
 - Containerized
+
+## Resources
+
+https://learn.microsoft.com/en-us/training/modules/dotnet-deploy-microservices-kubernetes/
+
+## Workflows
+
 
 ```console
 docker build -t arturkarbone/letskube:v1 .

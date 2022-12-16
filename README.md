@@ -35,6 +35,12 @@ Two pizza team rule
 
 https://learn.microsoft.com/en-us/training/modules/dotnet-deploy-microservices-kubernetes/
 
+## Tooling
+
+```console
+kubectl run one-off --rm --restart=Never -it --image=praqma/network-multitool -- sh -l
+```
+
 ## Workflows
 
 

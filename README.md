@@ -37,8 +37,8 @@ https://learn.microsoft.com/en-us/training/modules/dotnet-deploy-microservices-k
 
 ## Tools
 
-https://k8slens.dev/
-https://github.com/ahmetb/kubectx
+- https://k8slens.dev/
+- https://github.com/ahmetb/kubectx
 
 
 ## Troubleshooting

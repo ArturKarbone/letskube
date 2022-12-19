@@ -38,6 +38,17 @@ Kubernetes abstracts (commoditizes) the underlying infrastructure the say way op
 - GKE (Google Kubernetes Engine)
 - LKE (Linode Kubernetes Engine)
 
+Cluster is a set of nodes (machines).
+- master (control plane, no user apps). More than one for HA. 3-5. In different fault zones.
+  - API server (direct ineraction via kubectl, API)
+  - Scheduler (chooses wich nodes to run user application on)
+  - Cloud Controller (integration with cloud services - storage/load-balancing)
+  - Store etcd (where state is stored)
+  
+- worker (user apps)
+  - kubelet (agent - communication with masters - receiving tasks/reporting on the status of the tasks)
+  - Container runtime (starts/stops/manages containers)
+
 ## Resources
 
 https://learn.microsoft.com/en-us/training/modules/dotnet-deploy-microservices-kubernetes/

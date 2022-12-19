@@ -4,6 +4,7 @@
 
 **Microservices applications** - takes the exact same ammount of features (db/api/web/identity/reporting/outbound, etc.) and splits each one out into its own mini application.
 
+
 **Activities**:
 - develop
 - release/deploy (zero downtime)
@@ -15,7 +16,13 @@ Definition - compliance/checklist/protocol.
 
 Two pizza team rule
 
-**Kubernetes** - an orchestrator for cloud-native microservices applications (Desired state/actual state). OS of the Cloud.
+**Kubernetes** - an orchestrator for cloud-native microservices applications (nodes/resources;desired state/actual state). OS of the Cloud.
+
+Kubernetes abstracts (commoditizes) the underlying infrastructure the say way operating systems like Windows or Linux do (you don't have to care if your apps are running on Dell, Cisco, HPE, etc.). This is why it is called OS of the cloud (K8s runs on infrasturcture and applications run on K8s).
+
+- deploy to any cloud (no vendor lock to some extent)
+- switch to prem/other cloud where Kubernetes is supported
+
 
 **Cloud-native**:
 - Scale on demand

@@ -80,6 +80,7 @@ docker tag pizzabackend arturkarbone/pizzabackend #build without image registry 
 http://localhost:8001/api/v1/namespaces/default/services/letskube-service/proxy/
 
 ```console
+kubectl get nodes
 export pod=letskube-deployment-677b479cb4-rmb45
 kubectl get pod $pod -o yaml (check config)
 kubectl describe pod $pod

@@ -73,7 +73,7 @@ lens> Pod Shell
 
 ## Workflows
 
-docker image and docker container are two main actors
+**docker image** and **docker container** are two main actors
 
 ```console
 docker build -t arturkarbone/letskube:v1 .

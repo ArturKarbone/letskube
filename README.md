@@ -97,6 +97,10 @@ kubectl config get-contexts
 kubens
 kubectl get namespaces
 export pod=letskube-deployment-677b479cb4-rmb45
+kubectl apply -f pod.yaml
+kubectl apply -f service.yaml
+kubectl get pods
+kubectl get svc
 kubectl get pod $pod -o yaml (check config)
 kubectl describe pod $pod
 kubectl exec $pod -it sh

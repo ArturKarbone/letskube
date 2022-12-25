@@ -1,6 +1,6 @@
 ## Theory
 
-**Monolith applications** - just a fancy way of saying _all of the application features are bundled together as a single package_ (db/api/web/identity/reporting/outbound, etc.)
+**Monolith applications** - just a fancy way of saying _all of the application features (фунции/возможности приложения) are bundled together as a single package_ (db/api/web/identity/reporting/outbound, etc.)
 
 **Microservices applications** - takes the exact same ammount of features (db/api/web/identity/reporting/outbound, etc.) and splits each one out into its own mini application.
 

@@ -87,7 +87,9 @@ docker tag pizzabackend arturkarbone/pizzabackend #build without image registry 
 ```
 
 http://localhost:8001/api/v1/namespaces/default/services/letskube-service/proxy/
-
+  
+Pod - a wrapper/adapter around a container. Needs at least labels and other kubernetes constructs
+  
 ```console
 kubectl get nodes
 kubectx 

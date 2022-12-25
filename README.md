@@ -90,6 +90,10 @@ http://localhost:8001/api/v1/namespaces/default/services/letskube-service/proxy/
 
 ```console
 kubectl get nodes
+kubectx 
+kubectl config get-contexts
+kubens
+kubectl get namespaces
 export pod=letskube-deployment-677b479cb4-rmb45
 kubectl get pod $pod -o yaml (check config)
 kubectl describe pod $pod

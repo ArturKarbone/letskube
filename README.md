@@ -49,6 +49,11 @@ Cluster is a set of nodes (machines).
   - kubelet (agent - communication with masters - receiving tasks/reporting on the status of the tasks)
   - Container runtime (starts/stops/manages containers)
 
+## Configure kuberctl to talk to your cluster
+- download kubeconfig
+- integrate with existing <username>\.kube\config
+- create a standalone config (will be picked up by Lens for instance)
+
 ## Resources
 
 https://learn.microsoft.com/en-us/training/modules/dotnet-deploy-microservices-kubernetes/

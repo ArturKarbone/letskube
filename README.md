@@ -109,3 +109,7 @@ kubectl get event --field-selector involvedObject.name=$pod
 kubectl proxy
 kubectl port-forward svc/kubeview1 8080:80 namespace kubeview
 ```
+
+## Exams
+
+https://www.surepassexam.com/account/myproducts/
